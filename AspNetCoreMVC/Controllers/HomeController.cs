@@ -15,9 +15,17 @@ namespace AspNetCoreMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var student = new Student()
+            {
+                Name = "少司命",
+                Age=18,
+                Sex="女"
+            };
+            
+            return View(student);
         }
-
+     
+        
         public IActionResult Privacy()
         {
             return View();
