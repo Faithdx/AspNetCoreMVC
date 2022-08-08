@@ -1,6 +1,12 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model AspNetCoreMVC.ViewModel.StudentInfoViewModel;
+@{    
+    var title = ViewData["Title"];
 }
+
+<title>@Model.Title</title>
+
+<h2>@Model.Student.Name</h2>
+<h2>@Model.Address.City</h2>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>

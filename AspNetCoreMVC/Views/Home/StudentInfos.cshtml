@@ -1,0 +1,27 @@
+﻿@model List<Student>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @*<td> <a href="/Home/Details/@item.Id">查看详情</a></td>*@
+                    @*<td>@Html.ActionLink("查看详情","Details","Home",new{Id = item.Id})</td>*@
+                    <td><a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id">查看详情</a></td>
+                    <td>@item.Name</td>
+                    <td>@item.Sex</td>
+                    <td>@item.Age</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
