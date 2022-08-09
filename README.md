@@ -1,3 +1,2 @@
 # AspNetCoreMVC
-Asp.NetCore 技术栈
-学习过程记录
+Asp.NetCore 学习记录
